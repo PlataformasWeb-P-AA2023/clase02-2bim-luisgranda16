@@ -16,6 +16,7 @@ class EstudianteAdmin(admin.ModelAdmin):
     # se deja de usar la representación (str)
     # de la clase
     list_display = ('nombre', 'apellido', 'cedula')
+    # Sirve para filtrar lo que quiero buscar
     search_fields = ('nombre', 'cedula')
 
 # admin.site.register se lo altera
